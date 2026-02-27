@@ -7,4 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-Hi! This is Lutong Hao's home page on the web!
+Hi! I am a first-year PhD student at the Department of Management Science and Engineering, Stanford University. 
+
+Prior to Stanford, I did my Master's and Bachelor's in Mathematics and Statistics at Lincoln College, University of Oxford.

@@ -14,7 +14,7 @@ Education
 * Ph.D. Management Science and Engineering, Stanford University, 2025 - 2030 (expected)
 * M.Math. Mathematics and Statistics, University of Oxford, 2021 - 2025
 
-Work experience
+Experience
 ======
 * Summer Trader Intern, Jun - Aug 2024
   * Maven Securities, London, UK
@@ -27,10 +27,6 @@ Work experience
   * Jane Street, London, UK
   * Trading track. 
 
-* Spring Week Intern, Apr 2023
-  * Maven Securities, London, UK
-  * Trading track. 
-  
 <!-- Skills
 ======
 * Skill 1

@@ -11,25 +11,25 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Management Science and Engineering, Stanford University, 2025 - 2030 (expected)
-* MMath. in Mathematics and Statistics, University of Oxford, 2021 - 2025
+* Ph.D. Management Science and Engineering, Stanford University, 2025 - 2030 (expected)
+* M.Math. Mathematics and Statistics, University of Oxford, 2021 - 2025
 
 Work experience
 ======
-<!-- * Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer Trader Intern, Jun - Aug 2024
+  * Maven Securities, London, UK
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Research Assistant, Jul - Sep 2023
+  * Department of Computer Science, University of Oxford
+  * Supervisor: Prof. Seth Flaxman
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git -->
+* Spring INSIGHT Programme Participant, Apr 2023
+  * Jane Street, London, UK
+  * Trading track. 
+
+* Spring Week Intern, Apr 2023
+  * Maven Securities, London, UK
+  * Trading track. 
   
 <!-- Skills
 ======

@@ -7,6 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a first-year PhD student at the Department of Management Science and Engineering, Stanford University. 
+Hi! I am a first-year PhD student at the [Department of Management Science and Engineering](https://msande.stanford.edu/), Stanford University. 
 
-Prior to Stanford, I did my Master's and Bachelor's in Mathematics and Statistics at Lincoln College, University of Oxford.
+Prior to Stanford, I obtained an MMath in Mathematics and Statistics (integrated Bachelor's + Master's) at [Lincoln College](https://lincoln.ox.ac.uk/), University of Oxford.

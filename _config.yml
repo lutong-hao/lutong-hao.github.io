@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Lutong Hao (郝鹿彤)"
+title                    : "Lutong Hao 郝鹿彤"
 title_separator          : "-"
 name                     : &name "Lutong Hao"
 description              : &description "First-year PhD @ Stanford MS&E."
@@ -23,7 +23,7 @@ repository               : "hltlovespeach/lutonghao.github.io"
 author:
   # Biographic information
   avatar           : "profile.JPG"
-  name             : "Lutong Hao (郝鹿彤)"
+  name             : "Lutong Hao 郝鹿彤"
   pronouns         : # example: "she/her"  
   bio              : "First-year PhD @ Stanford MS&E."
   location         : "Stanford, CA"

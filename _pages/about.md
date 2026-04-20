@@ -13,4 +13,4 @@ Prior to Stanford, I obtained my MMath in Mathematics and Statistics (integrated
 
 I am broadly interested in applications of optimal transport methods, the theory of diffusion models, stochastic control, and continuous time reinforcement learning methods. 
 
-*(website still under construction, more to come -- Apr 2025)*
+*(website still under construction, more to come -- Apr 2026)*

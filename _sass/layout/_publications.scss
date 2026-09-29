@@ -1,0 +1,70 @@
+/* ==========================================================================
+   PUBLICATION LIST
+   Compact listing: short venue tag in a left column, paper details to the
+   right. Collapses to a single stacked column on narrow screens.
+   ========================================================================== */
+
+.publication-list {
+  margin-bottom: 2em;
+}
+
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.15em;
+  line-height: 1.45;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+  }
+}
+
+.pub-venue {
+  flex: 0 0 auto;
+  font-weight: bold;
+  color: var(--global-link-color);
+  white-space: nowrap;
+
+  @include breakpoint($medium) {
+    width: 7em;
+    padding-right: 0.85em;
+  }
+}
+
+.pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub-title {
+  font-weight: 600;
+
+  a {
+    color: var(--global-link-color);
+
+    &:hover {
+      color: var(--global-link-color-hover);
+    }
+  }
+}
+
+.pub-authors {
+  color: var(--global-text-color);
+}
+
+.pub-note {
+  color: var(--global-text-color-light);
+}
+
+.pub-award {
+  color: var(--global-text-color);
+  font-weight: 600;
+}
+
+.pub-links {
+  font-size: $type-size-6;
+
+  a {
+    margin-right: 0.6em;
+  }
+}

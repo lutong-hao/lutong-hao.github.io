@@ -1,0 +1,52 @@
+{% include base_path %}
+
+{% comment %}
+  Compact publication entry. Front matter fields it reads:
+
+    venue_short : short tag for the left column, e.g. "NeurIPS'26".
+                  Falls back to the year of `date`.
+    authors     : author line in markdown; wrap your own name in ** **.
+    notes       : list of extra lines (status, earlier versions, awards).
+    award       : single line given slight emphasis.
+    paperurl    : where the title links to. Falls back to this paper's own page.
+    codeurl / slidesurl / bibtexurl : optional extra links.
+{% endcomment %}
+
+{% if post.venue_short %}
+  {% assign venue_tag = post.venue_short %}
+{% else %}
+  {% assign venue_tag = post.date | default: "1900-01-01" | date: "%Y" %}
+{% endif %}
+
+{% if post.paperurl %}
+  {% assign pub_link = post.paperurl %}
+{% else %}
+  {% assign pub_link = post.url | prepend: base_path %}
+{% endif %}
+
+<div class="pub-item">
+  <div class="pub-venue">{{ venue_tag }}</div>
+  <div class="pub-body">
+    <div class="pub-title"><a href="{{ pub_link }}">{{ post.title }}</a></div>
+
+    {% if post.authors %}
+      <div class="pub-authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    {% endif %}
+
+    {% for note in post.notes %}
+      <div class="pub-note">{{ note | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    {% endfor %}
+
+    {% if post.award %}
+      <div class="pub-award">{{ post.award | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+    {% endif %}
+
+    {% if post.codeurl or post.slidesurl or post.bibtexurl %}
+      <div class="pub-links">
+        {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

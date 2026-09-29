@@ -20,14 +20,15 @@ main:
   # - title: "Portfolio"
   #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  # Temporarily hidden; the posts and /year-archive/ page still build.
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+
+  - title: "Experience"
+    url: /cv/
 
   - title: "Others"
     url: /extra-curricular/
-    
-  - title: "CV"
-    url: /cv/
     
   # - title: "CV"
   #   url: /cv-json/

@@ -10,6 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default"
 title                    : "Lutong Hao 郝鹿彤"
+masthead_title           : "About"  # text shown in the top-left of the navigation bar
 title_separator          : "-"
 name                     : &name "Lutong Hao"
 description              : &description "First-year PhD @ Stanford MS&E."

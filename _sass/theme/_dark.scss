@@ -12,9 +12,9 @@ $background                 : #474747;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
 $text                       : #ffffff;
-/* Morandi blue (#4e6b8c in the light theme), lightened to stay legible
-   against the dark background while keeping the same hue. */
-$link                       : #a5bdd9;
+/* The light theme's #4888d5, lightened to stay legible against the dark
+   background while keeping the same hue. */
+$link                       : #91b8e6;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
 

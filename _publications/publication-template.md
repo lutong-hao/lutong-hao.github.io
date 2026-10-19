@@ -20,8 +20,10 @@ notes:                       # optional extra lines: status, earlier versions, e
 award: "**1st place**, Some Student Paper Competition."   # optional, slightly emphasised
 
 # Optional links. Remove any field you do not need.
-# `paperurl` is what the title links to; without it the title links to this page.
-paperurl: https://arxiv.org/abs/1234.56789
+# `paperurl` is what the title links to; without it the title is plain text.
+# `preprinturl` is shown as a "Preprint" link below the notes.
+paperurl: https://example.com/published-paper
+preprinturl: https://arxiv.org/abs/1234.56789
 slidesurl: /files/slides.pdf
 bibtexurl: /files/bibtex.bib
 codeurl: https://github.com/your-username/project-name
@@ -32,8 +34,7 @@ citation: 'Author One, Author Two, and Author Three. (2026). "Publication Title.
 ---
 
 Replace this body text with any details you want on the dedicated publication page.
-Note that when `paperurl` is set the listing links straight to the paper, so this
-page is not linked from the Publications list.
+Note that this page is not linked from the Publications list.
 
 Suggested workflow:
 

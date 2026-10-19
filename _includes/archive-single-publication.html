@@ -8,7 +8,8 @@
     authors     : author line in markdown; wrap your own name in ** **.
     notes       : list of extra lines (status, earlier versions, awards).
     award       : single line given slight emphasis.
-    paperurl    : where the title links to. Falls back to this paper's own page.
+    paperurl    : optional; if set, the title links to it. Otherwise the title is plain text.
+    preprinturl : optional; shown as a "Preprint" link below the notes.
     codeurl / slidesurl / bibtexurl : optional extra links.
 {% endcomment %}
 
@@ -18,16 +19,10 @@
   {% assign venue_tag = post.date | default: "1900-01-01" | date: "%Y" %}
 {% endif %}
 
-{% if post.paperurl %}
-  {% assign pub_link = post.paperurl %}
-{% else %}
-  {% assign pub_link = post.url | prepend: base_path %}
-{% endif %}
-
 <div class="pub-item">
   <div class="pub-venue">{{ venue_tag }}</div>
   <div class="pub-body">
-    <div class="pub-title"><a href="{{ pub_link }}">{{ post.title }}</a></div>
+    <div class="pub-title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</div>
 
     {% if post.authors %}
       <div class="pub-authors">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
@@ -41,8 +36,9 @@
       <div class="pub-award">{{ post.award | markdownify | remove: "<p>" | remove: "</p>" }}</div>
     {% endif %}
 
-    {% if post.codeurl or post.slidesurl or post.bibtexurl %}
+    {% if post.preprinturl or post.codeurl or post.slidesurl or post.bibtexurl %}
       <div class="pub-links">
+        {% if post.preprinturl %}<a href="{{ post.preprinturl }}">Preprint</a>{% endif %}
         {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
         {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
         {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}

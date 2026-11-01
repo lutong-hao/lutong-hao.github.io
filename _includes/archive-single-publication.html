@@ -4,7 +4,8 @@
   Compact publication entry. Front matter fields it reads:
 
     venue_short : short tag for the left column, e.g. "NeurIPS'26".
-                  Falls back to the year of `date`.
+                  Falls back to the month and year of `date` for preprints,
+                  or just the year for other publications.
     authors     : author line in markdown; wrap your own name in ** **.
     notes       : list of extra lines (status, earlier versions, awards).
     award       : single line given slight emphasis.
@@ -15,6 +16,8 @@
 
 {% if post.venue_short %}
   {% assign venue_tag = post.venue_short %}
+{% elsif post.category == 'preprints' %}
+  {% assign venue_tag = post.date | default: "1900-01-01" | date: "%b %Y" %}
 {% else %}
   {% assign venue_tag = post.date | default: "1900-01-01" | date: "%Y" %}
 {% endif %}
